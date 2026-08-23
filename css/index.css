@@ -29,15 +29,7 @@ html {
     color: var(--hc-white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
-
-body::-webkit-scrollbar,
-html::-webkit-scrollbar {
-    display: none;
-}
-
 body.video-active {
     overflow: hidden;
 }
@@ -774,17 +766,8 @@ body.video-active {
     background: #ff4760;
 }
 
-/* Attempt to hide Fillout branding */
-a[href*="fillout.com"]:not([data-fillout-id]), 
-[class*="fillout-branding"], 
-[class*="fillout-watermark"] {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
 
-/* Hero section action buttons - matching shapes */
+
 .hero-btn-container {
     display: flex;
     gap: 15px;
